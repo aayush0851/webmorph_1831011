@@ -5,6 +5,7 @@
 
 body{
     font-family: "Poppins";
+    background-color: #152535;
 }
 
 /* navbar */
@@ -47,4 +48,105 @@ nav{
 }
 #user{
     padding: 2px 0 0 0;
+}
+
+/* overflown Image */
+
+#firstSection{
+    height: 88vh;
+}
+
+#overflownImage{
+    float: right;
+    position: relative;
+}
+#img1{
+    height: 65vh;
+    width: 150vh;
+    background-image: linear-gradient(to right, rgb(21,37,53,1),rgb(255,255,255,0.2),rgb(255,255,255,0),rgb(255,255,255,0),rgb(255,255,255,0)), url('/assets/overflownimage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#playButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    color: white;
+    font-size: 70px;
+    opacity: 0.8;
+}
+#poster{
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px 0px #161616;
+    width: 33%;
+    height: auto;
+    z-index: 9;
+    position: absolute;
+    top: 12%;
+    right: 97%;
+}
+#description{
+    position: absolute;
+    top: 89%;
+    left: 8%;
+    width: 70%;
+    z-index: 10;
+    color: white;
+}
+#description > h1{
+    font-size: 50px;
+    font-family: 'Josefin Sans';
+}
+#description > span {
+    margin-top: 12px;
+    font-size: 15px;
+    color: grey;
+}
+#desButtons{
+    margin-top: 10px;
+}
+#watchButton{
+    background-color: #2684FE;
+    padding: 3px 15px;
+    font-size: 22px;
+    border-radius: 3px;
+    font-weight: 300;
+}
+.deB{
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 2px 15px;
+    font-size: 22px;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+/* section */
+section{
+    padding: 0 75px;
+    border: 1px solid white;
+    color: white;
+}
+
+.section > h2{
+    font-weight: 700;
+    font-family: "Josefin Sans";
+    font-size: 30px;
+}
+
+.grid_A{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.thumbnail{
+    width: 250px;
+    height: 170px;
+    border-radius: 3px;
+    margin: 5px 0;
 }
