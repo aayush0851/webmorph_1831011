@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins";
+}
+
+/* navbar */
+
+nav{
+    background-color: #203345;
+    padding: 10px 40px 0px 40px;
+}
+#nav-UL {
+    float: right;
+}
+#nav-UL> li{
+    display: inline-block;
+    font-size: 20px;
+}
+#nav-UL > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+#nav-UL > li > form {
+    display: inline-block;
+
+}
+#searchBar > input {
+    background-color: transparent;
+    padding: 8px 7px;
+    border-color: transparent;
+}
+#searchBar > button{
+    background-color: transparent;
+    padding: 8px 7px;
+    border-color: transparent;
+    color: white;
+}
+#searchBar{
+    background-color: #455662;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+#user{
+    padding: 2px 0 0 0;
+}
