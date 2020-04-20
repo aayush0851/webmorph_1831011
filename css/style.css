@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins";
+    background-color: #152535;
+}
+
+/* navbar */
+
+nav{
+    background-color: #203345;
+    padding: 10px 40px 0px 40px;
+}
+#nav-UL {
+    float: right;
+}
+#nav-UL> li{
+    display: inline-block;
+    font-size: 20px;
+}
+#nav-UL > li > a {
+    text-decoration: none;
+    padding: 10px;
+}
+#nav-UL > li > form {
+    display: inline-block;
+
+}
+#searchBar > input {
+    background-color: transparent;
+    padding: 8px 7px;
+    border-color: transparent;
+}
+#searchBar > button{
+    background-color: transparent;
+    padding: 8px 7px;
+    border-color: transparent;
+    color: white;
+}
+#searchBar{
+    background-color: #455662;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+#user{
+    padding: 2px 0 0 0;
+}
+
+/* overflown Image */
+
+#firstSection{
+    height: 85vh;
+}
+
+#overflownImage{
+    float: right;
+    position: relative;
+}
+#img1{
+    height: 65vh;
+    width: 150vh;
+    background-image: linear-gradient(to right, rgb(21,37,53,1),rgb(255,255,255,0.2),rgb(255,255,255,0),rgb(255,255,255,0),rgb(255,255,255,0)), url('/assets/overflownimage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#playButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    color: white;
+    font-size: 70px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+#poster{
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px 0px #161616;
+    width: 33%;
+    height: auto;
+    z-index: 9;
+    position: absolute;
+    top: 12%;
+    right: 97%;
+    cursor: pointer;
+}
+#description{
+    position: absolute;
+    top: 89%;
+    left: 8%;
+    width: 70%;
+    z-index: 10;
+    color: white;
+}
+#description > h1{
+    font-size: 50px;
+    font-family: 'Josefin Sans';
+}
+#description > span {
+    margin-top: 12px;
+    font-size: 15px;
+    color: grey;
+}
+#desButtons{
+    margin-top: 10px;
+}
+#watchButton{
+    background-color: #2684FE;
+    padding: 3px 15px;
+    font-size: 22px;
+    border-radius: 3px;
+    font-weight: 300;
+    transition: all 0.2s;
+    display: inline-block;
+    cursor: pointer;
+}
+.deB{
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 2px 15px;
+    font-size: 22px;
+    margin-left: 30px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* section */
+section{
+    padding: 0 75px;
+    color: white;
+}
+
+.section > h2{
+    font-weight: 700;
+    font-family: "Josefin Sans";
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.thumbnail{
+    width: 250px;
+    height: 170px;
+    border-radius: 3px;
+    margin: 5px;
+    position: relative;
+    z-index: 10;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.enclosure{
+    width: 250px;
+    height: 170px;
+    border-radius: 3px;
+    margin: 5px;
+    position: relative;
+} 
+
+
+.langBox{
+    width: 130px;
+    height: 140px;
+    border-radius: 3px;
+    margin: 5px 0;
+    position: relative;
+    transition: all 0.2s;
+    box-shadow: 1px 2px 8px rgb(19, 18, 18);
+    cursor: pointer;
+}
+
+.lg1{
+    background: linear-gradient(to bottom, rgba(224, 221, 32, 0.904),rgba(224, 110, 43, 0.966));
+}
+.lg2{
+    background: linear-gradient(to bottom, rgba(194, 240, 66, 0.904),rgba(43, 224, 124, 0.966));
+}
+.lg3{
+    background: linear-gradient(to bottom, rgba(32, 224, 128, 0.904),rgba(28, 138, 211, 0.966));
+}
+.lg4{
+    background: linear-gradient(to bottom, rgba(147, 32, 224, 0.904),rgba(224, 43, 103, 0.966));
+}
+.lg5{
+    background: linear-gradient(to bottom, rgba(224, 32, 32, 0.904),rgba(46, 21, 6, 0.966));
+}
+.lg6{
+    background: linear-gradient(to bottom, rgba(224, 157, 32, 0.904),rgba(43, 224, 215, 0.966));
+}
+.lg7{
+    background: linear-gradient(to bottom, rgba(224, 32, 32, 0.904),rgba(224, 212, 43, 0.966));
+}
+
+.langBox> h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Josefin Sans';
+    font-size: 50px;
+}
+
+.lang{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 2;
+    font-weight: 700;
+}
+
+#topRated{
+    margin-top: 20px;
+    width: 100%;
+    height: 60vh;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+}
+
+#seemore{
+    margin-top: 60px;
+    width: 100%;
+    background-color: #203345;
+    color: grey;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 3px;
+    border: 1px solid #203345;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #203345;
+    color: grey;
+    font-size: 30px;
+    padding: 3% 25% 1% 25%;
+    margin-top: 50px;
+}
+
+#icons{
+    width: 100%;
+    text-align: center;
+}
+
+#icons>ul>li{
+    display: inline-block;
+}
+
+#icons > ul >li > a{
+    color: grey;
+    margin: 10px 5px 10px 5px;
+}
+
+
+#links_at_footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    font-size: 15px;
+    justify-content: space-evenly;
+}
+
+.linkFooter{
+    margin: 10px 15px;
+    cursor: pointer;
+}
+
+#lastElement{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#lastElement > img {
+    width: 75px;
+    height: auto;
+}
+
+.topMovie{
+    position: relative;
+    z-index: 10;
+}
+
+/* HIDDEN BOXES */
+
+.hiddenDesBox{
+    position: absolute;
+    z-index: 8;
+    top:20px;
+    left: 9px;
+    background-color: #203345;
+    padding: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all 0.5s;
+}
+
+.hiddenDesBoxGenre{
+    position: absolute;
+    z-index: 8;
+    top:20px;
+    left: 9px;
+    background-color: #203345;
+    padding: 10px 10px 0px 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all 0.5s;
+}
+
+.hyper{
+    float: right;
+    color: blue;
+    font-size: 10px;
+    margin-left: 90px;
+    line-height: 4.0;
+    cursor: pointer;
+}
+.hyper:hover{
+    text-decoration: underline;
+}
+
+.titl{
+    float: left;
+    font-size: 15px;
+    font-family: 'Josefin Sans';
+    text-align: left;
+    line-height: 2.0;
+}
+
+.hiddenDesBoxMovie{
+    position: absolute;
+    z-index: 8;
+    top:70%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 9;
+    opacity: 0;
+    background-color: #203345;
+    padding: 10px 30px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all 0.5s;
+}
+
+.headPart, .HiddenDes, .rating{
+    display: block;
+}
+
+.pl{
+    float: left;
+    width: 20%;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.plMovie{
+    float: left;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.pl:hover, .plMovie:hover{
+    color: orange;
+}
+
+.add:hover , .addMovie:hover{
+    color: paleturquoise;
+}
+
+.title{
+    float: left;
+    width: 60%;
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+    line-height: 2.0;
+    text-align: left;
+}
+
+.titleMovie{
+    float: left;
+    width: 60%;
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+    line-height: 2.0;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.add{
+    float: left;
+    width: 20%;
+    font-size: 25px;
+    text-align: right;
+    line-height: 2.0;
+    cursor: pointer;
+}
+
+.addMovie{
+    float: right;
+    width: 20%;
+    font-size: 25px;
+    text-align: right;
+    line-height: 2.0;
+    cursor: pointer;
+}
+
+.star{
+    float: left;
+    width: 80%;
+}
+
+.starMovie{
+    float: left;
+    width: 80%;
+}
+
+.rating{
+    margin-left: 10px;
+    font-size: 12px;
+    color: grey;
+    margin-top: 5px;
+}
+
+.ratingMovie{
+    margin-left: 10px;
+    font-size: 12px;
+    color: grey;
+    margin-top: 5px;
+}
+
+.ua{
+    float: right;
+    width: 10%;
+    text-align: center;
+    font-weight: 300;
+    border-radius: 3px;
+    font-size: 8px;
+    border: 1px solid grey;
+    margin-top: 2px;
+}
+
+.uaMovie{
+    float: right;
+    width: 10%;
+    text-align: center;
+    font-weight: 300;
+    border-radius: 3px;
+    font-size: 8px;
+    border: 1px solid grey;
+    margin-top: 2px;
+}
+
+.hov, .hov1, .hov11{
+    transition: all 0.2s;
+}
+
+
+#starc{
+    color: gold;
+}
+
+.HiddenDes{
+    margin-left: 10px;
+    color: grey;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* HOVER EFFECT */
+
+.enclosure:hover .hiddenDesBox{
+    top: 103%;
+    z-index: 11;
+}
+
+.enclosure:hover .hiddenDesBoxGenre{
+    top: 103%;
+    z-index: 11;
+}
+
+.thumbnail:hover{
+    transform: scale(1.1);
+    z-index: 12;
+}
+
+.langBox:hover{
+    transform: scale(1.2);
+    background: linear-gradient(to bottom, rgba(224, 125, 32, 0.904),rgba(7, 29, 70, 0.966));
+}
+
+.topMovie:hover .hiddenDesBoxMovie{
+    top: 99%;
+    z-index: 11;
+    opacity: 1;
+}
+
+#seemore:hover{
+    border: 1px solid white;
+    color: white;
+}
+
+.hov:hover{
+    color: white;
+}
+
+.hov11:hover{
+    transform: scale(1.2);
+}
+
+.topB{
+    border-top: 2px solid transparent;
+    color: rgb(155, 155, 155);
+}
+
+.topB:hover{
+    color: white;
+    border-top: 2px solid #2684FE;
+}
+
+a, button{
+    cursor: pointer;
+}
+input, button{
+    outline: none;
+}
