@@ -3,6 +3,7 @@
         <title></title>
         <meta name="viewport" content="width=device-initial-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/media_query.css">
         <!-- <link rel="icon" type="png/jpeg" href=""> -->
 
         <!-- Embedding CDN -->
@@ -19,6 +20,11 @@
 
         <nav>
             <img id="logo" src="assets/navLogo.png" alt="Flux Logo">
+            <div id="hamBurger">
+                <div id="lineA"></div>
+                <div id="lineB"></div>
+                <div id="lineC"></div>
+            </div>
             <ul id="nav-UL">
                 <li><a class="topB" href="">Home</a></li>
                 <li><a class="topB" href="">Movies</a></li>
@@ -36,6 +42,27 @@
             </ul>
         </nav>
 
+        <div id="toggle-bar">
+            <div id="close"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <ul id="togList">
+                <li><img id="logoTog" src="assets/navLogo.png" alt="Flux Logo"></li>
+                <li><a href="">HOME</a></li>
+                <li><a href="">Movies</a></li>
+                <li><a href="">TV Shows</a></li>
+                <li><a href="">Kids</a></li>
+                <li><a id="magnify">Search</a></li>
+                <li>
+                    <form>
+                        <div id="searchBar" class="hideSearch">
+                            <input type="text" placeholder="Search">
+                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </form>
+                </li>
+                <li><a href="">My Profile</a></li>
+            </ul>
+        </div>
+
     <!-- overflown image part -->
 
     <div id="firstSection">
@@ -45,7 +72,7 @@
             <img id="poster" src="/assets/postergot.jpg" alt="GOT Poster">
             <div id="description">
                 <h1>"Game of Thrones"</h1>
-                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</span>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                 <div id="desButtons">
                     <div id="watchButton" class="hov11"><i class="fa fa-play" aria-hidden="true"></i> Watch</div>
                     <div class="deB hov11"><i class="fa fa-plus" aria-hidden="true"></i> Add to Wishlist</div>

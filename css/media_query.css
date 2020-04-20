@@ -1,0 +1,108 @@
+@media only screen and (max-width:2160px){
+    .grid{
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width:1400px){
+    .grid{
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width:890px){
+    #nav-UL{
+        display: none;
+    }
+    #hamBurger{
+        display: block;
+    }
+}
+@media only screen and (max-width:770px){
+    .grid{
+        justify-content: space-around;
+    }
+    #poster{
+        top: 10%;
+        box-shadow: 2px 4px 10px 0px #161616;
+        right: 60%;
+    }
+    #firstSection{
+        height: 95vh;
+    }
+    #img1{
+        height: 65vh;
+        width: 120vh;
+    }
+    #description{
+        top: 105%;
+    }
+    #overflownImage{
+        float: none;
+        position: relative;
+    }
+}
+@media only screen and (max-width:470px){
+    .hiddenDesBoxMovie{
+        width: 75%;
+    }
+    .plMovie{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .titleMovie{
+        width: 50%;
+        font-size: 15px;
+        line-height: 2.0;
+        margin-left: 20px;
+    }
+    .addMovie{
+        width: 20%;
+        font-size: 15px;
+        line-height: 2.0;
+    }
+}
+@media only screen and (max-width:401px){
+    .section > h2{
+        font-size: 28px;
+    }
+    .hiddenDesBoxMovie{
+        width: 90%;
+    }
+    .thumbnail, .enclosure{
+        width: 230px;
+        height: 170px;
+    }
+    #poster{
+        top: 50%;
+        box-shadow: 2px 4px 10px 0px #161616;
+        right: 60%;
+    }
+    #overflownImage{
+        float: none;
+        position: relative;
+    }
+    #description > h1{
+        font-size: 30px;
+        font-family: 'Josefin Sans';
+    }
+    #description > p {
+        margin-top: 12px;
+        line-height: 1.2;
+        font-size: 10px;
+        color: grey;
+    }
+    #watchButton{
+        padding: 3px 15px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .deB{
+        padding: 2px 15px;
+        font-size: 15px;
+        margin-left: 1px;
+        margin-top: 5px;
+    }
+    #poster{
+        top: 60%;
+        right: 60%;
+    }
+}

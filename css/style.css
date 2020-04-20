@@ -6,6 +6,103 @@
 body{
     font-family: "Poppins";
     background-color: #152535;
+    overflow-x: hidden;
+}
+#toggle-bar{
+    width: 100%;
+    height: 0vh;
+    z-index: 99;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #152535;
+    text-align: center;
+    transition: all 0.2s;
+}
+#logoTog{
+    margin-bottom: 30px;
+}
+#togList{
+    list-style-type: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.2s;
+    display: none;
+}
+#togList>li>a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300;
+    color: grey;
+}
+#togList>li>a:hover{
+    color: white;
+}
+#togList>li{
+    margin-top: 10px;
+}
+.hideSearch{
+    display: none;
+    transition: all 0.2s;
+}
+#close{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 30px;
+    color: grey;
+    cursor: pointer;
+    display: none;
+}
+#close:hover{
+    color: white;
+}
+
+/* HAMBURGER ICON */
+
+#hamBurger{
+    position: relative;
+    height: 30px;
+    float: right;
+    top: 0px;
+    right: 8%;
+    cursor: pointer;
+    z-index: 101;
+    width: 30px;
+    display: none;
+}
+
+#lineA{
+    border: 2px solid white;
+    border-radius: 1px;
+    position: absolute;
+    top: 5px;
+    width: 27px;
+    transition: all 0.2s;
+}
+#lineB{
+    border: 2px solid white;
+    border-radius: 1px;
+    width: 27px;
+    position: absolute;
+    top: 15px;
+    transition: all 0.2s;
+}
+#lineC{
+    border: 2px solid white;
+    border-radius: 1px;
+    width: 27px;
+    position: absolute;
+    top: 25px;
+    transition: all 0.2s;
+}
+#hamBurger:hover #lineA{
+    top: 1px;
+}
+#hamBurger:hover #lineC{
+    top: 29px;
 }
 
 /* navbar */
@@ -13,9 +110,16 @@ body{
 nav{
     background-color: #203345;
     padding: 10px 40px 0px 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    top: 0;
 }
 #nav-UL {
-    float: right;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
 }
 #nav-UL> li{
     display: inline-block;
@@ -52,6 +156,7 @@ nav{
 /* overflown Image */
 
 #firstSection{
+    margin-top: 60px;
     height: 85vh;
 }
 
@@ -101,7 +206,7 @@ nav{
     font-size: 50px;
     font-family: 'Josefin Sans';
 }
-#description > span {
+#description > p {
     margin-top: 12px;
     font-size: 15px;
     color: grey;
@@ -147,9 +252,8 @@ section{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-
 .thumbnail{
     width: 250px;
     height: 170px;
@@ -165,7 +269,7 @@ section{
     width: 250px;
     height: 170px;
     border-radius: 3px;
-    margin: 5px;
+    margin:20px 5px 5px 5px;
     position: relative;
 } 
 
@@ -224,8 +328,13 @@ section{
 #topRated{
     margin-top: 20px;
     width: 100%;
-    height: 60vh;
+    height: 100%;
     border-radius: 5px;
+    position: relative;
+    z-index: 10;
+}
+
+.topMovie{
     position: relative;
     z-index: 10;
 }
@@ -292,11 +401,6 @@ footer{
     height: auto;
 }
 
-.topMovie{
-    position: relative;
-    z-index: 10;
-}
-
 /* HIDDEN BOXES */
 
 .hiddenDesBox{
@@ -325,10 +429,10 @@ footer{
 
 .hyper{
     float: right;
-    color: blue;
-    font-size: 10px;
+    color: rgb(61, 61, 240);
+    font-size: 12px;
     margin-left: 90px;
-    line-height: 4.0;
+    line-height: 3.0;
     cursor: pointer;
 }
 .hyper:hover{
