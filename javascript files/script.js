@@ -1,7 +1,5 @@
 var counter = false;
 
-document.getElementById("img1x").style.backgroundImage="url('/assets/grid1.jpg')";
-
 function toggle(){
     if(counter===false){
         document.getElementById('toggle-bar').style.height="100vh";
