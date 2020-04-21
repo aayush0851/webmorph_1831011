@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="./css/style_2.css">
         <link rel="stylesheet" type="text/css" href="./css/media_query.css">
         <!-- <link rel="icon" type="png/jpeg" href=""> -->
-
+        <script src="/javascript files/script.js"></script>
         <!-- Embedding CDN -->
 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -19,47 +19,47 @@
         <!-- navbar -->
 
         <nav>
-            <img id="logo" src="assets/navLogo.png" alt="Flux Logo">
+            <img id="logo" src="assets/navLogo.png" alt="Flux Logo" onclick="redirectback()">
             <div id="hamBurger">
                 <div id="lineA"></div>
                 <div id="lineB"></div>
                 <div id="lineC"></div>
             </div>
             <ul id="nav-UL">
-                <li><a class="topB" href="">Home</a></li>
-                <li><a class="topB" href="">Movies</a></li>
-                <li><a class="topB" href="">TV Shows</a></li>
-                <li><a class="topB" href="">Kids</a></li>
+                <li  onclick="redirectback()"><a class="topB" href="">Home</a></li>
+                <li  onclick="redirectback()"><a class="topB" href="">Movies</a></li>
+                <li  onclick="redirectback()"><a class="topB" href="">TV Shows</a></li>
+                <li  onclick="redirectback()"><a class="topB" href="">Kids</a></li>
                 <li>
-                    <form>
+                    <form onsubmit="redirectback()">
                         <div id="searchBar">
                             <input type="text" placeholder="Search">
-                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            <button type="submit"  onclick="redirectback()"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
                     </form>
                 </li>
-                <li id="user"><a class="topB" href=""><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                <li id="user" onclick="redirectback()"><a class="topB" href=""><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
 
         <div id="toggle-bar">
             <div id="close"><i class="fa fa-times" aria-hidden="true"></i></div>
             <ul id="togList">
-                <li><img id="logoTog" src="assets/navLogo.png" alt="Flux Logo"></li>
-                <li><a href="">HOME</a></li>
-                <li><a href="">Movies</a></li>
-                <li><a href="">TV Shows</a></li>
-                <li><a href="">Kids</a></li>
-                <li><a id="magnify">Search</a></li>
+                <li onclick="redirectback()"><img id="logoTog" src="assets/navLogo.png" alt="Flux Logo"></li>
+                <li onclick="redirectback()"><a href="">HOME</a></li>
+                <li onclick="redirectback()"><a href="">Movies</a></li>
+                <li onclick="redirectback()"><a href="">TV Shows</a></li>
+                <li onclick="redirectback()"><a href="">Kids</a></li>
+                <li onclick="redirectback()"><a id="magnify">Search</a></li>
                 <li>
-                    <form>
+                    <form onsubmit="redirectback()">
                         <div id="searchBar" class="hideSearch">
                             <input type="text" placeholder="Search">
                             <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
                     </form>
                 </li>
-                <li><a href="">My Profile</a></li>
+                <li onclick="redirectback()"><a href="">My Profile</a></li>
             </ul>
         </div>
 
@@ -71,8 +71,8 @@
             <p>Season 4 | 2018 | <span id="starc"><i class="fa fa-star" aria-hidden="true"></i></span> 4.3 </p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<wbr> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             <div id="desButtonsS">
-                <div id="watchButtonS" class="hov11"><i class="fa fa-play" aria-hidden="true"></i> Watch</div>
-                <div class="deBS hov11"><i class="fa fa-plus" aria-hidden="true"></i> Add to Wishlist</div>
+                <div id="watchButtonS" class="hov11" onclick="redirectback()"><i class="fa fa-play" aria-hidden="true"></i> Watch</div>
+                <div class="deBS hov11" onclick="redirectback()"><i class="fa fa-plus" aria-hidden="true"></i> Add to Wishlist</div>
             </div>
             <div id="details">
                 <div class="row">
@@ -112,8 +112,8 @@
         <div class="section">
             <h2>| Fan Favourites</h2>
             <div class="grid">
-                <div class="enclosure">
-                    <img class="thumbnail" src="assets/gridA1.jpg">
+                <div class="enclosure" onclick="redirectback()">
+                    <img class="thumbnail" src="assets/grid1.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
                             <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
@@ -130,8 +130,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="enclosure">
-                    <img class="thumbnail" src="assets/gridA2.jpg">
+                <div class="enclosure" onclick="redirectback()">
+                    <img class="thumbnail" src="assets/grid2.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
                             <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
@@ -148,8 +148,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="enclosure">
-                    <img class="thumbnail" src="assets/gridA3.jpg">
+                <div class="enclosure" onclick="redirectback()">
+                    <img class="thumbnail" src="assets/grid3.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
                             <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
@@ -166,8 +166,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="enclosure">
-                    <img class="thumbnail" src="assets/gridA4.jpg">
+                <div class="enclosure" onclick="redirectback()">
+                    <img class="thumbnail" src="assets/grid4.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
                             <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
@@ -214,6 +214,5 @@
             <div id="copyright">&copy; 1999-2020 by Flux.com, Inc.</div>
         </div>
     </footer>
-    <script src="/javascript files/script.js"></script>
     </body>
 </html>

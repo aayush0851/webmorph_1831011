@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 body{
     font-family: "Poppins";
     background-color: #152535;
@@ -687,4 +692,9 @@ a, button{
 }
 input, button{
     outline: none;
+}
+
+/* toggle classes */
+.addgreen{
+    color: rgb(34, 190, 34);
 }
