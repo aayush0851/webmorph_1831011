@@ -1,11 +1,37 @@
 @media only screen and (max-width:2160px){
     .grid{
-        justify-content: space-between;
+        justify-content: space-evenly;
+    }
+    #description{
+        top: 94%;
+        left: 20%;
+        width: 50%;
+    }
+    #poster{
+        top: 12%;
+        right: 83%;
+    }
+    #description > p {
+        font-size: 20px;
     }
 }
 @media only screen and (max-width:1400px){
     .grid{
         justify-content: space-between;
+    }
+}
+@media only screen and (max-width:1280px){
+    #description{
+        top: 87%;
+        left: 20%;
+        width: 70%;
+    }
+    #poster{
+        top: 13%;
+        right: 83%;
+    }
+    #description > p {
+        font-size: 18px;
     }
 }
 @media only screen and (max-width:890px){
@@ -20,27 +46,48 @@
     .grid{
         justify-content: space-around;
     }
-    #poster{
-        top: 10%;
-        box-shadow: 2px 4px 10px 0px #161616;
-        right: 60%;
-    }
     #firstSection{
-        height: 95vh;
+        height: 84vh;
+        margin-top: 100px;
     }
-    #img1{
-        height: 65vh;
-        width: 120vh;
-    }
-    #description{
-        top: 105%;
+    #tab{
+        display: block;
     }
     #overflownImage{
-        float: none;
-        position: relative;
+        display: none;
+    }
+    #desButtonsTAB{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .deBTAB{
+        border: 1px solid white;
+        display: block;
+        border-radius: 3px;
+        width: 50%;
+        padding: 3px 15px;
+        font-size: 25px;
+        margin-top: 20px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    #watchButtonTAB{
+        background-color: #2684FE;
+        padding: 3px 15px;
+        width: 50%;
+        font-size: 25px;
+        border-radius: 3px;
+        font-weight: 300;
+        transition: all 0.2s;
+        display: block;
+        cursor: pointer;
+    }
+    #hamBurger{
+        right: 10%;
     }
 }
-@media only screen and (max-width:470px){
+@media only screen and (max-width:480px){
     .hiddenDesBoxMovie{
         width: 75%;
     }
@@ -59,8 +106,24 @@
         font-size: 15px;
         line-height: 2.0;
     }
+    #desButtonsTAB{
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+    #descriptionTAB > h1{
+        font-size: 37px;
+    }
+    .deBTAB{
+        width: 60%;
+    }
+    #watchButtonTAB{
+        width: 60%;
+    }
+    #hamBurger{
+        right: 12%;
+    }
 }
-@media only screen and (max-width:401px){
+@media only screen and (max-width:414px){
     .section > h2{
         font-size: 28px;
     }
@@ -71,38 +134,54 @@
         width: 230px;
         height: 170px;
     }
-    #poster{
-        top: 50%;
-        box-shadow: 2px 4px 10px 0px #161616;
-        right: 60%;
-    }
-    #overflownImage{
-        float: none;
-        position: relative;
-    }
-    #description > h1{
+    #descriptionTAB > h1{
         font-size: 30px;
-        font-family: 'Josefin Sans';
     }
-    #description > p {
-        margin-top: 12px;
-        line-height: 1.2;
+    #descriptionTAB > p{
+        font-size: 12px;
+    }
+    #posterTAB{
+        width: 65%;
+        height: auto;
+    }
+    .deBTAB{
+        width: 80%;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    #watchButtonTAB{
+        width: 80%;
+        font-size: 20px;
+    }
+    #firstSection{
+        height: 93vh;
+    }
+    #hamBurger{
+        right: 15%;
+    }
+}
+@media only screen and (max-width:375px){
+    #descriptionTAB > h1{
+        font-size: 25px;
+    }
+    #firstSection{
+        height: 100vh;
+    }
+}
+@media only screen and (max-width:320px){
+    #descriptionTAB > h1{
+        font-size: 20px;
+    }
+    #descriptionTAB > p{
         font-size: 10px;
-        color: grey;
     }
-    #watchButton{
-        padding: 3px 15px;
+    .deBTAB{
+        width: 80%;
         font-size: 15px;
-        margin-top: 5px;
+        margin-top: 10px;
     }
-    .deB{
-        padding: 2px 15px;
+    #watchButtonTAB{
+        width: 80%;
         font-size: 15px;
-        margin-left: 1px;
-        margin-top: 5px;
-    }
-    #poster{
-        top: 60%;
-        right: 60%;
     }
 }
