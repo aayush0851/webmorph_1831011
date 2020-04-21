@@ -1,5 +1,5 @@
 var counter = false;
-redirectback();
+
 function toggle(){
     if(counter===false){
         document.getElementById('toggle-bar').style.height="100vh";
