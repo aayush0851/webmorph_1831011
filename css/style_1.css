@@ -197,7 +197,7 @@ nav{
 
 #firstSection{
     margin-top: 60px;
-    height: 85vh;
+    height: 89vh;
 }
 
 #overflownImage{
@@ -206,11 +206,12 @@ nav{
 }
 #img1{
     height: 65vh;
-    width: 150vh;
+    width: 163vh;
     background-image: linear-gradient(to right, rgb(21,37,53,1),rgb(255,255,255,0.2),rgb(255,255,255,0),rgb(255,255,255,0),rgb(255,255,255,0)), url('/assets/overflownimage.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
 #playButton{
     position: absolute;
@@ -247,8 +248,8 @@ nav{
     font-family: 'Josefin Sans';
 }
 #description > p {
-    margin-top: 12px;
-    font-size: 15px;
+    margin-top: 10px;
+    font-size: 14px;
     color: grey;
 }
 #desButtons{

@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins";
+    background-color: #152535;
+    overflow-x: hidden;
+}
+#toggle-bar{
+    width: 100%;
+    height: 0vh;
+    z-index: 99;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #152535;
+    text-align: center;
+    transition: all 0.2s;
+}
+#logoTog{
+    margin-bottom: 30px;
+}
+#togList{
+    list-style-type: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.2s;
+    display: none;
+}
+#togList>li>a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300;
+    color: grey;
+}
+#togList>li>a:hover{
+    color: white;
+}
+#togList>li{
+    margin-top: 10px;
+}
+.hideSearch{
+    display: none;
+    transition: all 0.2s;
+}
+#close{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 30px;
+    color: grey;
+    cursor: pointer;
+    display: none;
+}
+#close:hover{
+    color: white;
+}
+
+/* HAMBURGER ICON */
+
+#hamBurger{
+    position: relative;
+    height: 30px;
+    float: right;
+    top: 0px;
+    right: 8%;
+    cursor: pointer;
+    z-index: 101;
+    width: 30px;
+    display: none;
+}
+
+#lineA{
+    border: 2px solid white;
+    border-radius: 1px;
+    position: absolute;
+    top: 5px;
+    width: 27px;
+    transition: all 0.2s;
+}
+#lineB{
+    border: 2px solid white;
+    border-radius: 1px;
+    width: 27px;
+    position: absolute;
+    top: 15px;
+    transition: all 0.2s;
+}
+#lineC{
+    border: 2px solid white;
+    border-radius: 1px;
+    width: 27px;
+    position: absolute;
+    top: 25px;
+    transition: all 0.2s;
+}
+#hamBurger:hover #lineA{
+    top: 1px;
+}
+#hamBurger:hover #lineC{
+    top: 29px;
+}
+
+/* navbar */
+
+nav{
+    background-color: #203345;
+    padding: 10px 40px 0px 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    top: 0;
+}
+#nav-UL {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+}
+#nav-UL> li{
+    display: inline-block;
+    font-size: 20px;
+}
+#nav-UL > li > a {
+    text-decoration: none;
+    padding: 10px;
+}
+#nav-UL > li > form {
+    display: inline-block;
+
+}
+#searchBar > input {
+    background-color: transparent;
+    padding: 8px 7px;
+    border-color: transparent;
+}
+#searchBar > button{
+    background-color: transparent;
+    padding: 8px 7px;
+    border-color: transparent;
+    color: white;
+}
+#searchBar{
+    background-color: #455662;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+#user{
+    padding: 2px 0 0 0;
+}
+
+/* tab view */
+
+#tab{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    display: none;
+}
+
+#posterTAB{
+    border-radius: 5px;
+    box-shadow: 1px 2px 8px 0px #161616;
+    width: 45%;
+    height: auto;
+    z-index: 9;
+    cursor: pointer;
+}
+#descriptionTAB{
+    margin-top: 20px;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    padding: 0 50px;
+}
+#descriptionTAB > h1{
+    font-size: 50px;
+}
+#descriptionTAB > p{
+    color: grey;
+}
+#desButtonsTAB{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* overflown Image */
+
+
+#topSection{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+#cont{
+    text-align: center;
+    color: white;
+    flex-basis: 50%;
+}
+#cont > h1{
+    font-size: 50px;
+    font-family: 'Josefin Sans';
+    padding-top: 40px;
+    margin-bottom: 20px;
+    margin: 10 40px;
+}
+#cont > p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: grey;
+    text-align: left;
+    margin: 0 50px;
+}
+#img1x{
+    background-image: linear-gradient(to right, rgb(21,37,53,1),rgb(255,255,255,0.2),rgb(255,255,255,0),rgb(255,255,255,0),rgb(255,255,255,0)), url('/assets/overflownimage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 65vh;
+    width: 50%;
+    position: relative;
+}
+#playButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    color: white;
+    font-size: 70px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+#desButtonsS{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 70px 0px 70px;
+}
+#watchButtonS{
+    background-color: #2684FE;
+    padding: 3px 15px;
+    font-size: 22px;
+    border-radius: 3px;
+    font-weight: 300;
+    transition: all 0.2s;
+    display: inline-block;
+    cursor: pointer;
+}
+.deBS{
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 2px 15px;
+    font-size: 22px;
+    font-weight: 300;
+    cursor: pointer;
+}
+#details{
+    display: block;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+}
+.row{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.ll{
+    color: blue;
+    cursor: pointer;
+}
+.ll:hover{
+    text-decoration: underline;
+}
+.label{
+    font-size: 12px;
+    color: white;
+    text-align: left;
+}
+.name{
+    font-size: 12px;
+    text-align: right;
+}
+
+/* section */
+section{
+    padding: 0 75px;
+    color: white;
+}
+
+.section > h2{
+    font-weight: 700;
+    font-family: "Josefin Sans";
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+.thumbnail{
+    width: 250px;
+    height: 170px;
+    border-radius: 3px;
+    margin: 5px;
+    position: relative;
+    z-index: 10;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.enclosure{
+    width: 250px;
+    height: 170px;
+    border-radius: 3px;
+    margin:20px 5px 5px 5px;
+    position: relative;
+} 
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: #203345;
+    color: grey;
+    font-size: 30px;
+    padding: 3% 25% 1% 25%;
+    margin-top: 50px;
+}
+
+#icons{
+    width: 100%;
+    text-align: center;
+}
+
+#icons>ul>li{
+    display: inline-block;
+}
+
+#icons > ul >li > a{
+    color: grey;
+    margin: 10px 5px 10px 5px;
+}
+
+
+#links_at_footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    font-size: 15px;
+    justify-content: space-evenly;
+}
+
+.linkFooter{
+    margin: 10px 15px;
+    cursor: pointer;
+}
+
+#lastElement{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#lastElement > img {
+    width: 75px;
+    height: auto;
+}
+
+/* HIDDEN BOXES */
+
+.hiddenDesBox{
+    position: absolute;
+    z-index: 8;
+    top:20px;
+    left: 9px;
+    background-color: #203345;
+    padding: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all 0.5s;
+}
+
+.headPart, .HiddenDes, .rating{
+    display: block;
+}
+
+.pl{
+    float: left;
+    width: 20%;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.plMovie{
+    float: left;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.pl:hover, .plMovie:hover{
+    color: orange;
+}
+
+.add:hover , .addMovie:hover{
+    color: paleturquoise;
+}
+
+.title{
+    float: left;
+    width: 60%;
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+    line-height: 2.0;
+    text-align: left;
+}
+
+.add{
+    float: left;
+    width: 20%;
+    font-size: 25px;
+    text-align: right;
+    line-height: 2.0;
+    cursor: pointer;
+}
+
+.star{
+    float: left;
+    width: 80%;
+}
+
+.rating{
+    margin-left: 10px;
+    font-size: 12px;
+    color: grey;
+    margin-top: 5px;
+}
+
+.ua{
+    float: right;
+    width: 10%;
+    text-align: center;
+    font-weight: 300;
+    border-radius: 3px;
+    font-size: 8px;
+    border: 1px solid grey;
+    margin-top: 2px;
+}
+
+.hov, .hov1, .hov11{
+    transition: all 0.2s;
+}
+
+
+#starc{
+    color: gold;
+}
+
+.HiddenDes{
+    margin-left: 10px;
+    color: grey;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* HOVER EFFECT */
+
+.enclosure:hover .hiddenDesBox{
+    top: 103%;
+    z-index: 11;
+}
+
+.enclosure:hover .hiddenDesBoxGenre{
+    top: 103%;
+    z-index: 11;
+}
+
+.thumbnail:hover{
+    transform: scale(1.1);
+    z-index: 12;
+}
+
+.hov:hover{
+    color: white;
+}
+
+.hov11:hover{
+    transform: scale(1.2);
+}
+
+.topB{
+    border-top: 2px solid transparent;
+    color: rgb(155, 155, 155);
+}
+
+.topB:hover{
+    color: white;
+    border-top: 2px solid #2684FE;
+}
+
+a, button{
+    cursor: pointer;
+}
+input, button{
+    outline: none;
+}

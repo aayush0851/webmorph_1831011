@@ -42,6 +42,55 @@
         display: block;
     }
 }
+
+/* page 2 */
+@media only screen and (max-width:950px){
+    .deBS{
+        margin-top: 15px;
+    }
+}
+@media only screen and (max-width:610px){
+    #img1x{
+        height: 65vh;
+        width: 100%;
+    }
+    #cont{
+        text-align: center;
+        color: white;
+        flex-basis: 100%;
+    }
+    .deBS{
+        margin-top: 0px;
+    }
+    #cont>p{
+        text-align: center;
+    }
+    #desButtonsS{
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px 40px 0px 40px;
+    }
+}
+@media only screen and (max-width:476px){
+    .deBS{
+        margin-top: 15px;
+    }
+}
+@media only screen and (max-width:440px){
+    #cont > h1{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width:350px){
+    #cont > h1{
+        font-size: 30px;
+    }
+    #cont > p{
+        font-size: 15px;
+    }
+}
+
+/* page 2 */
 @media only screen and (max-width:770px){
     .grid{
         justify-content: space-around;
