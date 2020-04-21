@@ -36,7 +36,7 @@ function redirect(){
 }
 
 function redirectback(){
-    window.open('./index_1.html');
+    window.open('./index.html');
 }
 
 
