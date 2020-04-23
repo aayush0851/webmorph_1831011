@@ -33,14 +33,19 @@ function redirect(){
     window.open('./index_2.html');
 }
 
-function redirectback(){
-    window.open('./index.html');
-}
+
+
+// function redirectback(){
+//     window.open('./index.html');
+
+// }
+
+function wish(){
+    alert('Added to wishlist');
+};
 
 
 document.getElementById('hamBurger').addEventListener("click", toggle);
 document.getElementById('close').addEventListener("click", toggle);
 document.getElementById('magnify').addEventListener("click", searchBox);
 var arrClass = document.getElementsByClassName('hideSearch');
-
-
