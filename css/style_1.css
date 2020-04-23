@@ -212,7 +212,7 @@ nav{
 #img1{
     height: 65vh;
     width: 163vh;
-    background-image: linear-gradient(to right, rgb(21,37,53,1),rgb(255,255,255,0.2),rgb(255,255,255,0),rgb(255,255,255,0),rgb(255,255,255,0)), url('./assets/overflownimage.jpg');
+    background-image: linear-gradient(to right, rgb(21,37,53,1),rgb(255,255,255,0.2),rgb(255,255,255,0),rgb(255,255,255,0),rgb(255,255,255,0)), url('../assets/overflownimage.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
