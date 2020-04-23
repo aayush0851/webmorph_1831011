@@ -222,7 +222,7 @@ nav{
     margin: 0 50px;
 }
 #img1x{
-    background-image: linear-gradient(to right, rgb(21,37,53,1),rgb(255,255,255,0.2),rgb(255,255,255,0),rgb(255,255,255,0),rgb(255,255,255,0)), url('/assets/overflownimage.jpg');
+    background: linear-gradient(to right, rgb(21,37,53,1),rgb(255,255,255,0.2),rgb(255,255,255,0),rgb(255,255,255,0),rgb(255,255,255,0)), url('../assets/overflownimage.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

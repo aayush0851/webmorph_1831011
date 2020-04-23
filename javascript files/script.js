@@ -35,13 +35,17 @@ function redirect(){
 
 
 
-// function redirectback(){
-//     window.open('./index.html');
+function redirectback(){
+    window.open('./index.html');
 
-// }
+}
 
 function wish(){
     alert('Added to wishlist');
+};
+
+function play(){
+    alert('Will be played in a while');
 };
 
 

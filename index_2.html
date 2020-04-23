@@ -26,31 +26,32 @@
                 <div id="lineC"></div>
             </div>
             <ul id="nav-UL">
-                <li  onclick="redirectback()"><a class="topB" href="">Home</a></li>
-                <li  onclick="redirectback()"><a class="topB" href="">Movies</a></li>
-                <li  onclick="redirectback()"><a class="topB" href="">TV Shows</a></li>
-                <li  onclick="redirectback()"><a class="topB" href="">Kids</a></li>
-                <li>
-                    <form onsubmit="redirectback()">
-                        <div id="searchBar">
-                            <input type="text" placeholder="Search">
-                            <button type="submit"  onclick="redirectback()"><i class="fa fa-search" aria-hidden="true"></i></button>
-                        </div>
-                    </form>
-                </li>
-                <li id="user" onclick="redirectback()"><a class="topB" href=""><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
-            </ul>
+                <ul id="nav-UL">
+                    <li><a href="#firstSection" class="topB" href="">Home</a></li>
+                    <li><a href="#movie" class="topB" href="">Movies</a></li>
+                    <li><a href="#tv" class="topB" href="">TV Shows</a></li>
+                    <li><a href="#kids" class="topB" href="">Kids</a></li>
+                    <li>
+                        <form onsubmit="redirectback()">
+                            <div id="searchBar">
+                                <input type="text" placeholder="Search" required>
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </li>
+                    <li id="user"><a href="#icons" class="topB" href=""><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                </ul>
         </nav>
 
         <div id="toggle-bar">
             <div id="close"><i class="fa fa-times" aria-hidden="true"></i></div>
             <ul id="togList">
                 <li onclick="redirectback()"><img id="logoTog" src="assets/navLogo.png" alt="Flux Logo"></li>
-                <li onclick="redirectback()"><a href="">HOME</a></li>
-                <li onclick="redirectback()"><a href="">Movies</a></li>
-                <li onclick="redirectback()"><a href="">TV Shows</a></li>
-                <li onclick="redirectback()"><a href="">Kids</a></li>
-                <li onclick="redirectback()"><a id="magnify">Search</a></li>
+                <li><a href="#firstSection" class="topB" href="">Home</a></li>
+                <li><a href="#movie" class="topB" href="">Movies</a></li>
+                <li><a href="#tv" class="topB" href="">TV Shows</a></li>
+                <li><a href="#kids" class="topB" href="">Kids</a></li>
+                <li><a id="magnify">Search</a></li>
                 <li>
                     <form onsubmit="redirectback()">
                         <div id="searchBar" class="hideSearch">
@@ -59,7 +60,7 @@
                         </div>
                     </form>
                 </li>
-                <li onclick="redirectback()"><a href="">My Profile</a></li>
+                <li><a href="#icons">My Profile</a></li>
             </ul>
         </div>
 
@@ -71,7 +72,7 @@
             <p>Season 4 | 2018 | <span id="starc"><i class="fa fa-star" aria-hidden="true"></i></span> 4.3 </p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<wbr> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             <div id="desButtonsS">
-                <div id="watchButtonS" class="hov11" onclick="redirectback()"><i class="fa fa-play" aria-hidden="true"></i> Watch</div>
+                <div id="watchButtonS" class="hov11" onclick="play()"><i class="fa fa-play" aria-hidden="true"></i> Watch</div>
                 <div class="deBS hov11" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i> Add to Wishlist</div>
             </div>
             <div id="details">
