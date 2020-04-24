@@ -5,7 +5,7 @@
         <link rel="stylesheet" type="text/css" href="./css/style_2.css">
         <link rel="stylesheet" type="text/css" href="./css/media_query.css">
         <!-- <link rel="icon" type="png/jpeg" href=""> -->
-        
+
         <!-- Embedding CDN -->
 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -26,10 +26,10 @@
                 <div id="lineC"></div>
             </div>
             <ul id="nav-UL">
-                <li><a href="#firstSection" class="topB" href="">Home</a></li>
-                <li><a href="#movie" class="topB" href="">Movies</a></li>
-                <li><a href="#tv" class="topB" href="">TV Shows</a></li>
-                <li><a href="#kids" class="topB" href="">Kids</a></li>
+                <li><a href="#firstSection" class="topB">Home</a></li>
+                <li><a href="#movie" class="topB">Movies</a></li>
+                <li><a href="#tv" class="topB">TV Shows</a></li>
+                <li><a href="#kids" class="topB">Kids</a></li>
                 <li>
                     <form onsubmit="redirectback()">
                         <div id="searchBar">
@@ -38,7 +38,7 @@
                         </div>
                     </form>
                 </li>
-                <li id="user"><a href="#icons" class="topB" href=""><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                <li id="user"><a href="#icons" class="topB"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
 
@@ -46,20 +46,20 @@
             <div id="close"><i class="fa fa-times" aria-hidden="true"></i></div>
             <ul id="togList">
                 <li onclick="redirectback()"><img id="logoTog" src="assets/navLogo.png" alt="Flux Logo"></li>
-                <li><a href="#firstSection" class="topB" href="">Home</a></li>
-                <li><a href="#movie" class="topB" href="">Movies</a></li>
-                <li><a href="#tv" class="topB" href="">TV Shows</a></li>
-                <li><a href="#kids" class="topB" href="">Kids</a></li>
+                <li onclick="toggle()"><a href="#firstSection" class="topB">Home</a></li>
+                <li onclick="toggle()"><a href="#movie" class="topB">Movies</a></li>
+                <li onclick="toggle()"><a href="#tv" class="topB">TV Shows</a></li>
+                <li onclick="toggle()"><a href="#kids" class="topB">Kids</a></li>
                 <li><a id="magnify">Search</a></li>
                 <li>
                     <form onsubmit="redirectback()">
                         <div id="searchBar" class="hideSearch">
-                            <input type="text" placeholder="Search">
+                            <input type="text" placeholder="Search" required>
                             <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
                     </form>
                 </li>
-                <li><a href="#icons">My Profile</a></li>
+                <li onclick="toggle()"><a href="#icons">My Profile</a></li>
             </ul>
         </div>
 
@@ -98,7 +98,7 @@
             </div>
         </div>
         <div id="img1x">
-            <div id="playButton"><i class="fa fa-play-circle rot" aria-hidden="true"></i></div>
+            <div id="playButton" onclick="play()"><i class="fa fa-play-circle rot" aria-hidden="true"></i></div>
         </div>
     </div>
 
@@ -116,7 +116,7 @@
                     <img class="thumbnail" src="assets/grid1.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
-                            <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                            <div class="pl" onclick="play()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                             <div class="title"><h3>Show1</h3></div>
                             <div class="add" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -134,7 +134,7 @@
                     <img class="thumbnail" src="assets/grid2.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
-                            <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                            <div class="pl" onclick="play()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                             <div class="title"><h3>Show2</h3></div>
                             <div class="add" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -152,7 +152,7 @@
                     <img class="thumbnail" src="assets/grid3.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
-                            <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                            <div class="pl" onclick="play()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                             <div class="title"><h3>Show3</h3></div>
                             <div class="add" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -170,7 +170,7 @@
                     <img class="thumbnail" src="assets/grid4.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
-                            <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                            <div class="pl" onclick="play()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                             <div class="title"><h3>Show4</h3></div>
                             <div class="add" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -214,7 +214,7 @@
             <div id="copyright">&copy; 1999-2020 by Flux.com, Inc.</div>
         </div>
     </footer>
-    <script src="./javascript files/script2.js"></script>
+    
     <script src="./javascript files/script.js"></script>
     </body>
 </html>

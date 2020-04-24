@@ -12,7 +12,7 @@ function toggle(){
         document.getElementById('togList').style.display="none";
         document.getElementById('close').style.display="none";
         counter=false;
-        searchBox();
+        arrClass[0].style.display="none";
     }
 }
 
@@ -30,13 +30,13 @@ function searchBox(){
 }
 
 function redirect(){
-    window.open('./index_2.html');
+    window.open('https://aayush0851.github.io/webmorph_1831011/index_2.html');
 }
 
 
 
 function redirectback(){
-    window.open('./index.html');
+    window.open('https://aayush0851.github.io/webmorph_1831011/index.html');
 
 }
 
@@ -48,8 +48,13 @@ function play(){
     alert('Will be played in a while');
 };
 
+function langC(){
+    alert('Language Changed');
+}
+
 
 document.getElementById('hamBurger').addEventListener("click", toggle);
 document.getElementById('close').addEventListener("click", toggle);
 document.getElementById('magnify').addEventListener("click", searchBox);
 var arrClass = document.getElementsByClassName('hideSearch');
+

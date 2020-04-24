@@ -26,10 +26,10 @@
                 <div id="lineC"></div>
             </div>
             <ul id="nav-UL">
-                <li><a href="#firstSection" class="topB" href="">Home</a></li>
-                <li><a href="#movie" class="topB" href="">Movies</a></li>
-                <li><a href="#tv" class="topB" href="">TV Shows</a></li>
-                <li><a href="#kids" class="topB" href="">Kids</a></li>
+                <li><a href="#firstSection" class="topB">Home</a></li>
+                <li><a href="#movie" class="topB">Movies</a></li>
+                <li><a href="#tv" class="topB">TV Shows</a></li>
+                <li><a href="#kids" class="topB">Kids</a></li>
                 <li>
                     <form onsubmit="redirect()">
                         <div id="searchBar">
@@ -38,7 +38,7 @@
                         </div>
                     </form>
                 </li>
-                <li id="user"><a href="#icons" class="topB" href=""><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                <li id="user"><a href="#icons" class="topB"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
 
@@ -46,20 +46,20 @@
             <div id="close"><i class="fa fa-times" aria-hidden="true"></i></div>
             <ul id="togList">
                 <li onclick="redirect()"><img id="logoTog" src="assets/navLogo.png" alt="Flux Logo"></li>
-                <li><a href="#firstSection" class="topB" href="">Home</a></li>
-                <li><a href="#movie" class="topB" href="">Movies</a></li>
-                <li><a href="#tv" class="topB" href="">TV Shows</a></li>
-                <li><a href="#kids" class="topB" href="">Kids</a></li>
+                <li onclick="toggle()"><a href="#firstSection" class="topB">Home</a></li>
+                <li onclick="toggle()"><a href="#movie" class="topB">Movies</a></li>
+                <li onclick="toggle()"><a href="#tv" class="topB">TV Shows</a></li>
+                <li onclick="toggle()"><a href="#kids" class="topB">Kids</a></li>
                 <li><a id="magnify">Search</a></li>
                 <li>
                     <form onsubmit="redirect()">
                         <div id="searchBar" class="hideSearch">
-                            <input type="text" placeholder="Search">
+                            <input type="text" placeholder="Search" required>
                             <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
                     </form>
                 </li>
-                <li><a href="#icons">My Profile</a></li>
+                <li onclick="toggle()"><a href="#icons">My Profile</a></li>
             </ul>
         </div>
 
@@ -69,12 +69,12 @@
 
         <!-- TABLET VIEW -->
         <div id="tab">
-            <img id="posterTAB" src="./assets/postergot.jpg" alt="GOT Poster">
+            <img id="posterTAB" src="./assets/postergot.jpg" alt="GOT Poster" onclick="redirect()">
             <div id="descriptionTAB">
                 <h1>"Game of Thrones"</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                 <div id="desButtonsTAB">
-                    <div id="watchButtonTAB" class="hov11"><a href="/index_2.html"><i class="fa fa-play" aria-hidden="true"></i> Watch</a></div>
+                    <div id="watchButtonTAB" class="hov11"><a href="https://aayush0851.github.io/webmorph_1831011/index_2.html"><i class="fa fa-play" aria-hidden="true"></i> Watch</a></div>
                     <div class="deBTAB hov11 pop" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i> Add to Wishlist</div>
                     <div class="deBTAB hov11" onclick="redirect()">Details</div>
                 </div>
@@ -85,12 +85,12 @@
         <div id="overflownImage">
             <div id="img1"></div>
             <div id="playButton"><i class="fa fa-play-circle rot" aria-hidden="true"></i></div>
-            <img id="poster" src="./assets/postergot.jpg" alt="GOT Poster">
+            <img id="poster" src="./assets/postergot.jpg" alt="GOT Poster" onclick="redirect()">
             <div id="description">
                 <h1>"Game of Thrones"</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
                 <div id="desButtons">
-                    <div id="watchButton" class="hov11"><a href="/index_2.html"><i class="fa fa-play" aria-hidden="true"></i> Watch</a></div>
+                    <div id="watchButton" class="hov11"><a href="https://aayush0851.github.io/webmorph_1831011/index_2.html"><i class="fa fa-play" aria-hidden="true"></i> Watch</a></div>
                     <div class="deB hov11 pop" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i> Add to Wishlist</div>
                     <div class="deB hov11" onclick="redirect()">Details</div>
                 </div>
@@ -111,7 +111,7 @@
                     <img class="thumbnail" src="assets/grid1.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
-                            <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                            <div class="pl" onclick="redirect()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                             <div class="title"><h3>Show1</h3></div>
                             <div class="add" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -129,7 +129,7 @@
                     <img class="thumbnail" src="assets/grid2.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
-                            <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                            <div class="pl" onclick="redirect()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                             <div class="title"><h3>Show2</h3></div>
                             <div class="add" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -147,7 +147,7 @@
                     <img class="thumbnail" src="assets/grid3.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
-                            <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                            <div class="pl" onclick="redirect()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                             <div class="title"><h3>Show3</h3></div>
                             <div class="add" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -165,7 +165,7 @@
                     <img class="thumbnail" src="assets/grid4.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
-                            <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                            <div class="pl" onclick="redirect()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                             <div class="title"><h3>Show4</h3></div>
                             <div class="add" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -191,7 +191,7 @@
                     <img class="thumbnail" src="assets/grid5.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
-                            <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                            <div class="pl" onclick="redirect()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                             <div class="title"><h3>Show5</h3></div>
                             <div class="add" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -209,7 +209,7 @@
                     <img class="thumbnail" src="assets/grid6.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
-                            <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                            <div class="pl" onclick="redirect()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                             <div class="title"><h3>Show6</h3></div>
                             <div class="add" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -227,7 +227,7 @@
                     <img class="thumbnail" src="assets/grid7.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
-                            <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                            <div class="pl" onclick="redirect()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                             <div class="title"><h3>Show7</h3></div>
                             <div class="add" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -245,7 +245,7 @@
                     <img class="thumbnail" src="assets/grid8.jpg">
                     <div class="hiddenDesBox">
                         <div class="headPart">
-                            <div class="pl"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                            <div class="pl" onclick="redirect()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                             <div class="title"><h3>Show8</h3></div>
                             <div class="add" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                         </div>
@@ -267,31 +267,31 @@
         <div class="section">
             <h2>| Watch in your language</h2>
             <div class="grid">
-                <div class="langBox lg1">
+                <div class="langBox lg1" onclick="langC()">
                     <h1>H</h1>
                     <span class="lang">HINDI</span>
                 </div>
-                <div class="langBox lg2">
+                <div class="langBox lg2" onclick="langC()">
                     <h1>E</h1>
                     <span class="lang">ENGLISH</span>
                 </div>
-                <div class="langBox lg3">
+                <div class="langBox lg3" onclick="langC()">
                     <h1>T</h1>
                     <span class="lang">TAMIL</span>
                 </div>
-                <div class="langBox lg4">
+                <div class="langBox lg4" onclick="langC()">
                     <h1>P</h1>
                     <span class="lang">PUNJABI</span>
                 </div>
-                <div class="langBox lg5">
+                <div class="langBox lg5" onclick="langC()">
                     <h1>B</h1>
                     <span class="lang">BHOJPURI</span>
                 </div>
-                <div class="langBox lg6">
+                <div class="langBox lg6" onclick="langC()">
                     <h1>M</h1>
                     <span class="lang">MARATHI</span>
                 </div>
-                <div class="langBox lg7">
+                <div class="langBox lg7" onclick="langC()">
                     <h1>S</h1>
                     <span class="lang">SPANISH</span>
                 </div>
@@ -306,7 +306,7 @@
                 <img id="topRated" src="assets/grid9.jpg">
                 <div class="hiddenDesBoxMovie">
                     <div class="headPartMovie">
-                        <div class="plMovie"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
+                        <div class="plMovie" onclick="redirect()"><i class="fa fa-play-circle-o" aria-hidden="true"></i></div>
                         <div class="titleMovie"><h3>"Top Rated"</h3></div>
                         <div class="addMovie pop" onclick="wish()"><i class="fa fa-plus" aria-hidden="true"></i></div>
                     </div>
@@ -327,7 +327,7 @@
                 <div class="enclosure">
                     <img class="thumbnail" src="assets/grid5.jpg">
                     <div class="hiddenDesBoxGenre">
-                        <div class="headPart">
+                        <div class="headPart" onclick="redirect()">
                             <div class="titl"><h3>Romance</h3></div>
                             <div class="hyper">+Explore</div>
                         </div>
@@ -336,7 +336,7 @@
                 <div class="enclosure">
                     <img class="thumbnail" src="assets/grid4.jpg">
                     <div class="hiddenDesBoxGenre">
-                        <div class="headPart">
+                        <div class="headPart" onclick="redirect()">
                             <div class="titl"><h3>Sci-Fi</h3></div>
                             <div class="hyper">+Explore</div>
                         </div>
@@ -345,7 +345,7 @@
                 <div class="enclosure">
                     <img class="thumbnail" src="assets/grid8.jpg">
                     <div class="hiddenDesBoxGenre">
-                        <div class="headPart">
+                        <div class="headPart" onclick="redirect()">
                             <div class="titl"><h3>Comedy</h3></div>
                             <div class="hyper">+Explore</div>
                         </div>
@@ -354,7 +354,7 @@
                 <div class="enclosure">
                     <img class="thumbnail" src="assets/grid3.jpg">
                     <div class="hiddenDesBoxGenre">
-                        <div class="headPart">
+                        <div class="headPart" onclick="redirect()">
                             <div class="titl"><h3>Drama</h3></div>
                             <div class="hyper">+Explore</div>
                         </div>
@@ -365,7 +365,7 @@
 
         <!-- SEE MORE BAR -->
 
-        <div id="seemore">
+        <div id="seemore" onclick="redirect()">
             <h1>SEE MORE</h1>
         </div>
 
