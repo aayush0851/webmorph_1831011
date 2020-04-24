@@ -332,26 +332,60 @@ section{
     cursor: pointer;
 }
 
+@keyframes transit{
+    0%{transform: scale(1);}
+    40%{transform: scale(1.25);}
+    900%{transform: scale(1);}
+    100%{transform: scale(1);}
+}
+
 .lg1{
     background: linear-gradient(to bottom, rgba(224, 221, 32, 0.904),rgba(224, 110, 43, 0.966));
+    animation-name: transit;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .lg2{
     background: linear-gradient(to bottom, rgba(194, 240, 66, 0.904),rgba(43, 224, 124, 0.966));
+    animation-name: transit;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s;
 }
 .lg3{
     background: linear-gradient(to bottom, rgba(32, 224, 128, 0.904),rgba(28, 138, 211, 0.966));
+    animation-name: transit;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.6s;
 }
 .lg4{
     background: linear-gradient(to bottom, rgba(147, 32, 224, 0.904),rgba(224, 43, 103, 0.966));
+    animation-name: transit;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.9s;
 }
 .lg5{
     background: linear-gradient(to bottom, rgba(224, 32, 32, 0.904),rgba(46, 21, 6, 0.966));
+    animation-name: transit;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.2s;
 }
 .lg6{
     background: linear-gradient(to bottom, rgba(224, 157, 32, 0.904),rgba(43, 224, 215, 0.966));
+    animation-name: transit;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.5s;
 }
 .lg7{
     background: linear-gradient(to bottom, rgba(224, 32, 32, 0.904),rgba(224, 212, 43, 0.966));
+    animation-name: transit;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 1.8s;
 }
 
 .langBox> h1{
@@ -655,7 +689,10 @@ footer{
 }
 
 .langBox:hover{
-    transform: scale(1.2);
+    transform: scale(1.5);
+    animation: none;
+    color: black;
+    z-index: 10;
     background: linear-gradient(to bottom, rgba(224, 125, 32, 0.904),rgba(7, 29, 70, 0.966));
 }
 
